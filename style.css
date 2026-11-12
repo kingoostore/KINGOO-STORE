@@ -95,3 +95,78 @@ footer {
     opacity: .35;
   }
 }
+
+/* ===== KINGOO STORE PREMIUM UPGRADE ===== */
+
+body {
+  background: #070d1b;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  backdrop-filter: blur(15px);
+  background: rgba(8, 16, 34, 0.95);
+  border-bottom: 1px solid #18385e;
+  padding: 15px 8%;
+}
+
+.logo {
+  letter-spacing: 1px;
+  text-shadow: 0 0 15px #1689ee;
+}
+
+.logo span {
+  color: #35a9ff;
+}
+
+.nav-button,
+.primary-button {
+  background: linear-gradient(135deg, #087cf0, #35baff);
+  box-shadow: 0 5px 20px rgba(22, 137, 238, 0.25);
+  transition: 0.3s;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px #1689ee66;
+}
+
+.hero {
+  min-height: 480px;
+  padding: 100px 8%;
+}
+
+.hero h1 {
+  letter-spacing: -1px;
+  text-shadow: 0 4px 20px #1689ee22;
+}
+
+.feature,
+.product,
+.form-container {
+  border: 1px solid #24476d;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #14243d, #0b1426);
+  transition: 0.3s;
+}
+
+.feature:hover,
+.product:hover {
+  transform: translateY(-5px);
+  border-color: #35a9ff;
+  box-shadow: 0 10px 30px #087cf033;
+}
+
+footer {
+  border-top: 1px solid #24476d;
+  background: #080e1b;
+}
+
+@media (max-width: 650px) {
+  .hero {
+    min-height: 400px;
+    padding: 75px 6%;
+  }
+}
