@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KINGOO STORE - Top Up Mobile Legends</title>
+  <meta name="description" content="Kingoo Store - Layanan pemesanan top up Mobile Legends.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">KINGOO<span>STORE</span></div>
+    <a href="#order" class="nav-button">Top Up</a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="tag">KINGOO STORE</span>
+        <h1>Top Up Diamond<br><span>Mobile Legends</span></h1>
+        <p>Top up lebih mudah, praktis, dan transparan.
+           Pesan diamond favoritmu di Kingoo Store.</p>
+        <a href="#order" class="primary-button">Mulai Top Up</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="feature">
+        <span>🛡️</span>
+        <h3>Pembayaran Terverifikasi</h3>
+        <p>Pembayaran diperiksa sebelum pesanan diproses.</p>
+      </div>
+      <div class="feature">
+        <span>⚡</span>
+        <h3>Proses Praktis</h3>
+        <p>Pemesanan mudah melalui website.</p>
+      </div>
+      <div class="feature">
+        <span>🎧</span>
+        <h3>Bantuan Admin</h3>
+        <p>Hubungi admin jika mengalami kendala.</p>
+      </div>
+    </section>
+
+    <section class="order-section" id="order">
+      <div class="section-heading">
+        <span>STORE</span>
+        <h2>Pilih Diamond</h2>
+        <p>Pilih nominal diamond yang ingin kamu beli.</p>
+      </div>
+
+      <div class="product-grid" id="products"></div>
+
+      <div class="form-container">
+        <h2>Data Pemain</h2>
+        <p>Masukkan User ID dan Zone ID dengan benar.</p>
+
+        <form id="orderForm">
+          <label>User ID</label>
+          <input type="text" id="userId"
+            placeholder="Contoh: 12345678" required>
+
+          <label>Zone ID</label>
+          <input type="text" id="zoneId"
+            placeholder="Contoh: 1234" required>
+
+          <label>Nomor WhatsApp</label>
+          <input type="tel" id="phone"
+            placeholder="08xxxxxxxxxx" required>
+
+          <div class="selected-info">
+            <span>Produk dipilih</span>
+            <strong id="selectedProduct">Belum dipilih</strong>
+          </div>
+
+          <div class="selected-info">
+            <span>Total harga</span>
+            <strong id="selectedPrice">Rp0</strong>
+          </div>
+
+          <button type="submit" class="primary-button full">
+            Buat Pesanan
+          </button>
+        </form>
+
+        <div id="result" class="result"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <h2>KINGOO STORE</h2>
+    <p>Top Up Mobile Legends</p>
+    <p class="copyright">
+      © 2026 Kingoo Store. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
